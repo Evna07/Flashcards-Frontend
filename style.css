@@ -1,0 +1,92 @@
+html {
+    font-family: 'Instrument Serif', serif;
+    background-color: #dbcdad;
+    background-image: url("5987121.jpg"); /*Image by coolvector on Freepik*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    background-color: #1D3557;
+    color: #dbcdad;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+header {
+    width: 75vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-area {
+    width: 100vh;
+    aspect-ratio: 1 / 1; /* set the aspect ratio to 1:1 */
+    background-color: #034c3c;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.card {
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    flex-basis: 30%;
+    display: flex;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+    margin: 1%;
+
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.front,
+.back{
+    width: 100%;
+    height: 100%;
+    color: #dbcdad;
+    border-radius: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+}
+
+.front{
+    z-index: 2;
+    backface-visibility: hidden;
+    background-color: #011627;
+}
+
+.back{
+    z-index: 1;
+    background-color: #dbcdad;
+    transform: rotateY(180deg);
+    color: #011627;
+    contain: content;
+}
+
+.card p {
+    margin: 20%;
+    font-size: 2.5vh;
+    padding: 1%;
+}
+
+.back p{
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 2vh;
+}
